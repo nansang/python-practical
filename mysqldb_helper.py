@@ -9,3 +9,7 @@ Version:
 Descripton:创建这一个数据库操作类
 Help:
 '''
+
+import MySQLdb
+
+conn = MySQLdb
