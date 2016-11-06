@@ -21,6 +21,7 @@ http://www.runoob.com/python/python-mysql.html
 
 import MySQLdb
 
+
 conn = MySQLdb.connect(host="127.0.0.1", user="user_tv", passwd="abc@123%", db="douyu_danmu")
 cursor = conn.cursor()
 cursor.execute("SELECT VERSION()")
