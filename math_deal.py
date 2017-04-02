@@ -12,6 +12,7 @@ Help:
 
 import random
 
+
 def generate_verification_code(len=6):
 
     code_list = []
@@ -29,5 +30,16 @@ def generate_verification_code(len=6):
 
 if __name__ == "__main__":
 
+    # 把字符串变成了函数并且还为该函数提供了全局变量。
+    namespace = {"name": "wupeiqi", "data": [18, 73, 84]}
+    code = '''def hellocute():return  "name %s ,age %d" %(name,data[0],) '''
+    func = compile(code, '<string>', "exec")
+    exec func in namespace
+    result = namespace['hellocute']()
+    print result
+
     str = generate_verification_code(4)
     print "str = %s" % str
+
+
+
