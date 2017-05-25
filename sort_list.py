@@ -68,3 +68,5 @@ print city.country
 print City.country
 
 
+print dir(City)
+print dir(operator)
